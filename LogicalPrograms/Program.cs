@@ -7,13 +7,16 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Logical Programs");
-            Console.WriteLine("1.Fibbonacci Series");
+            Console.WriteLine("1.Fibbonacci Series\n2.Perfect Number");
             Console.WriteLine("Choose option from above");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
                 case 1:
                     FibbonacciSeries.Fibbonacci_Series();
+                    break;
+                case 2:
+                    PerfectNumber.Display_Perfect_Number();
                     break;
             }
         }
