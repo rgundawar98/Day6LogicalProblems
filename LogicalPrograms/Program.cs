@@ -7,7 +7,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Logical Programs");
-            Console.WriteLine("1.Fibbonacci Series\n2.Perfect Number\n3.PrimeNumber\n4.ReverseNumber");
+            Console.WriteLine("1.Fibbonacci Series\n2.Perfect Number\n3.PrimeNumber\n4.ReverseNumber\n6.Calulate StopWatch");
             Console.WriteLine("Choose option from above");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -23,6 +23,9 @@ namespace LogicalPrograms
                     break;
                 case 4:
                     ReverseNumber.Display_Reverse_Number();
+                    break;
+                case 6:
+                    Calulate_StopWatch.Display_Stopwatch();
                     break;
             }
         }
