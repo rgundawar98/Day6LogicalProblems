@@ -9,7 +9,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the Logical Programs");
             Console.WriteLine("1.Fibbonacci Series\n2.Perfect Number\n3.PrimeNumber\n4.ReverseNumber\n6.Calulate StopWatch" +
-                "\n8.DayOfWeek\n9.Temperature Conversion\n10.MonthlyPayment\n11.SquraeRoot\n7.Check Amount");
+                "\n8.DayOfWeek\n9.Temperature Conversion\n10.MonthlyPayment\n11.SquraeRoot\n7.Check Amount\n5.Coupon Number");
             Console.WriteLine("Choose option from above");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -43,6 +43,9 @@ namespace LogicalPrograms
                     break;
                 case 7:
                     VendingMachine.Check_Amount();
+                    break;
+                case 5:
+                    CouponNumber.Check_Coupon_Number(50);
                     break;
             }
         }
